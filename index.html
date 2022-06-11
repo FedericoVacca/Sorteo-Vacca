@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <title>Sorteos</title>
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpg"" alt=" logo" width="30" height="40" class="d-inline-block align-text-top">
+                Sorteos FT
+            </a>
+            <p id="user"></p>
+        </div>
+    </nav>
+    <!-- Login -->
+    <div class="card " style="max-width: 840px;">
+        <div class="card-body"></div>
+    <form id="formulario" class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationCustom02" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Usuario</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <but ton id="ingresar" class="btn btn-primary" type="submit">Ingresar</but>
+        </div>
+        <div class="col-12">
+            <button id="cuenta" class="btn btn-primary" type="submit">Ya estoy registrado</button>
+        </div>
+    </form>
+    </div>
+
+    
+    <!-- Modal -->
+    <section id="MyModal" class="modal modal--show">
+        <div class="modalContainer">
+            <img src="/img/Winners_Isometric.svg" class="modalImg" alt="ganador">
+            <h2 class="modalTitle">El ganador es!!</h2>
+            <p id="ModalWinner" class="modalGanador"> </p>
+            <a href="#" class="modalClose">Cerrar</a>
+    </div>
+    </section>
+    
+
+
+
+
+
+<!-- seccion sorteo -->
+    <div class="card " style="max-width: 840px;">
+        <div class="card-body">
+            <h5 class="card-title">Sorteo FT</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Ingrese a los participantes</h6>
+            <div class="input-group">
+                <input id="participante" type="text" class="form-control" placeholder="Ingrese los participantes"
+                    aria-label="Recipient's username with two button addons">
+                <button id="btn-agregar" class="btn btn-outline-secondary" type="button">Agregar Participante</button>
+                <button id="btn-eliminar" class="btn btn-outline-danger" type="button">Eliminar Participante</button>
+            </div>
+            <div class="container-fluid mt-4 mb-4 ">
+                <ul class="list-group">
+                
+
+                </ul>
+            </div>
+            <button id="btn-sortear" type="button" class="btn btn-secondary btn-lg">Iniciar Sorteo</button>
+        </div>
+    </div>
+
+
+
+    <!-- javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"> </script>
+</body>
+
+</html> 

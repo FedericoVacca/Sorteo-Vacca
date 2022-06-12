@@ -94,9 +94,13 @@ function sortear() {
         )
         return
     }
-    var MyModal = document.querySelector('#MyModal')
-    var ModalWinner = document.querySelector('#ModalWinner')
     let random = Math.floor(Math.random() * participantes.length);
-    MyModal.style.display = "block";
-    ModalWinner.innerHTML = participantes[random];
+    Swal.fire({
+        title: 'Felicitaciones',
+        text: `El ganador es ${participantes[random]}`,
+        imageUrl: '../img/Winners_Isometric.svg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'ganador',
+    })
 }

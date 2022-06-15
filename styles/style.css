@@ -13,6 +13,13 @@ nav {
     background: linear-gradient(150deg, #e0beed, #65b185);
 }
 
+#formlogin {
+    display: block;
+}
+
+#formsorteo {
+    display: none;
+}
 
 .modal{
     position: fixed;

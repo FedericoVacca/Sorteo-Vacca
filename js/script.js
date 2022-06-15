@@ -30,6 +30,17 @@ function ingresarUsuario() {
     };
     localStorage.setItem('datosDeUsuario', JSON.stringify(jsonDatos));
     document.getElementById("formulario").reset();
+    fSwitch()
+}
+
+
+function fSwitch(){
+    document.getElementById('formlogin').style.display='none';
+    document.getElementById('formsorteo').style.display= 'block';
+
+
+
+    
 }
 
 function cuentaExistente() {
@@ -44,6 +55,7 @@ function cuentaExistente() {
         let nombre = JSON.parse(datos).nombre
         let usuario = document.querySelector('#user')
         usuario.innerHTML = "Bienvenido/a: " + nombre
+        fSwitch()
     }
 }
 
